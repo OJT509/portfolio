@@ -16,6 +16,10 @@
     text-align: center;
 }
 
+.header-text {
+    font-size: 3rem;
+}
+
 .sub-heading {
     font-size: 2.2rem;
 }
@@ -64,6 +68,6 @@
 //---Large Screens---//
 @media (min-width: 1335px) {
     .frosted {
-        padding: 5em 12em;
+        padding: 5em 20em;
     }
 }
