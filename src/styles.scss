@@ -1,17 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@300;400&display=swap");
 
 :root {
-    --primary-color: black;
+    --primary-color: white;
     --secondary-color: #2ea2cc;
 }
 
 * {
     padding: 0;
     margin: 0;
-}
-
-body {
-    color: white;
 }
 
 .header-text {
@@ -25,7 +21,6 @@ body {
 }
 
 .thin-text {
-    font-family: "Quicksand", sans-serif;
     font-weight: 300;
 }
 
