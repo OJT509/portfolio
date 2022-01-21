@@ -12,4 +12,11 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scrollToAbout() {
+    var aboutPage = document.getElementById('about');
+
+    aboutPage?.scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
 }
