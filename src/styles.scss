@@ -63,6 +63,21 @@ a:visited {
     backdrop-filter: blur(8px);
 }
 
+.frosted-dialog {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(8px);
+}
+
+//---Overrides---///
+mat-dialog-container {
+    background-color: transparent !important;
+}
+
+.cdk-overlay-dark-backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
 //---Small Screens---//
 @media (max-width: 389px) {
 }
@@ -92,4 +107,13 @@ a:visited {
     .container {
         padding: 0 8em;
     }
+}
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
