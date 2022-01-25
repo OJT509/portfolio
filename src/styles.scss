@@ -19,10 +19,10 @@
 .text {
     font-family: "Quicksand", sans-serif;
     font-size: 1rem;
-}
 
-.thin-text {
-    font-weight: 300;
+    &-thin {
+        font-weight: 300;
+    }
 }
 
 .centered {
@@ -41,11 +41,15 @@
     border: 2px solid black;
     text-decoration: none;
     transition: 0.7s;
-}
 
-.info-button:hover {
-    transform: scale(1.05);
-    border: 2px solid black;
+    &:hover {
+        transform: scale(1.05);
+        border: 2px solid black;
+    }
+
+    &:focus {
+        outline: none;
+    }
 }
 
 a:visited {
@@ -61,6 +65,19 @@ a:visited {
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(8px);
+
+    &-dialog {
+        background-color: var(--primary-color);
+    }
+}
+
+//---Overrides---///
+mat-dialog-container {
+    background-color: transparent !important;
+}
+
+.cdk-overlay-dark-backdrop {
+    background: rgba(0, 0, 0, 0.6);
 }
 
 //---Small Screens---//
