@@ -1,0 +1,17 @@
+h1, p {
+    text-align: center;
+}
+
+.centered {
+    flex-direction: column;
+}
+
+.info-button {
+    margin-top: 1em;
+    font-size: 1.1rem;
+    padding: 0.5em 2em;
+
+    &:hover {
+        transform: none;
+    }
+}
